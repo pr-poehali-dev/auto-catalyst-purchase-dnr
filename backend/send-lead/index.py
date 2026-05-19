@@ -3,7 +3,7 @@ import json
 import urllib.request
 
 def handler(event: dict, context) -> dict:
-    """Отправляет заявку с сайта КатаСкупка в Telegram-бот."""
+    """Отправляет заявку с сайта КатаСкупка в Telegram-бот. v2"""
 
     if event.get('httpMethod') == 'OPTIONS':
         return {
