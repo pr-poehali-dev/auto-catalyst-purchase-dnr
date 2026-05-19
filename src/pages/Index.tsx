@@ -68,12 +68,12 @@ const stats = [
 ];
 
 const prices = [
-  { brand: "Toyota / Lexus", price: "до 25 000 ₽", hot: true },
-  { brand: "BMW / Mercedes", price: "до 20 000 ₽", hot: false },
-  { brand: "Honda / Nissan", price: "до 15 000 ₽", hot: false },
-  { brand: "Ford / Opel", price: "до 10 000 ₽", hot: false },
-  { brand: "Отечественные авто", price: "до 5 000 ₽", hot: false },
-  { brand: "Дорогостоящие иномарки", price: "до 80 000 ₽", hot: true },
+  { brand: "Toyota / Lexus", price: "до 45 000 ₽", hot: true },
+  { brand: "BMW / Mercedes", price: "до 38 000 ₽", hot: false },
+  { brand: "Honda / Nissan", price: "до 30 000 ₽", hot: false },
+  { brand: "Ford / Opel", price: "до 18 000 ₽", hot: false },
+  { brand: "Отечественные авто", price: "до 8 000 ₽", hot: false },
+  { brand: "Дорогостоящие иномарки", price: "до 120 000 ₽", hot: true },
 ];
 
 export default function Index() {
@@ -273,7 +273,10 @@ export default function Index() {
                   </span>
                 )}
                 <span className="font-medium text-[#C0B09A]">{p.brand}</span>
-                <span className={`font-display text-xl font-bold ${p.hot ? 'text-[#FF6B1A]' : 'text-white'}`}>{p.price}</span>
+                <div className="text-right">
+                  <div className={`font-display text-xl font-bold ${p.hot ? 'text-[#FF6B1A]' : 'text-white'}`}>{p.price}</div>
+                  <div className="text-xs text-[#A09080]">за кг</div>
+                </div>
               </div>
             ))}
           </div>
