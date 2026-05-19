@@ -68,11 +68,11 @@ const stats = [
 ];
 
 const prices = [
-  { brand: "Toyota / Lexus", price: "от 8 000 ₽", hot: true },
-  { brand: "BMW / Mercedes", price: "от 6 000 ₽", hot: false },
-  { brand: "Honda / Nissan", price: "от 5 000 ₽", hot: false },
-  { brand: "Ford / Opel", price: "от 3 000 ₽", hot: false },
-  { brand: "Отечественные авто", price: "от 1 500 ₽", hot: false },
+  { brand: "Toyota / Lexus", price: "до 25 000 ₽", hot: true },
+  { brand: "BMW / Mercedes", price: "до 20 000 ₽", hot: false },
+  { brand: "Honda / Nissan", price: "до 15 000 ₽", hot: false },
+  { brand: "Ford / Opel", price: "до 10 000 ₽", hot: false },
+  { brand: "Отечественные авто", price: "до 5 000 ₽", hot: false },
   { brand: "Дорогостоящие иномарки", price: "до 80 000 ₽", hot: true },
 ];
 
