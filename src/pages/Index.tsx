@@ -186,11 +186,9 @@ export default function Index() {
               <span className="text-[#FF6B1A] text-sm font-medium">Выезд по всей республике · Оплата в день обращения</span>
             </div>
 
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-none mb-4">
-              ДОРОГО КУПЛЮ<br />
-              <span className="gradient-text">КАТАЛИЗАТОР</span><br />
-              С ВАШЕГО АВТО
-            </h1>
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-none mb-4">ДОРОГО КУПИМ
+КАТАЛИЗАТОР
+С ВАШЕГО АВТО</h1>
 
             <p className="text-xl text-[#C0B09A] mb-3 font-semibold">
               Цена по XRF-спектрометру — без обмана и занижения
