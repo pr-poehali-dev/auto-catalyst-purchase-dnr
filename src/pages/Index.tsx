@@ -233,7 +233,7 @@ export default function Index() {
                   { icon: "ShieldCheck", text: "Официальная деятельность" },
                   { icon: "TrendingUp", text: "Цена по биржевым котировкам" },
                   { icon: "Clock", text: "Оценка за 15 минут" },
-                  { icon: "MapPin", text: "Выезд по всей России" },
+                  { icon: "MapPin", text: "Выезд по всей республике" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-lg bg-[#FF6B1A]/15 flex items-center justify-center shrink-0">
