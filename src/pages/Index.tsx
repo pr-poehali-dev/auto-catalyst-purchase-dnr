@@ -6,7 +6,7 @@ const HERO_BG = "https://cdn.poehali.dev/projects/b51c012f-6a7f-4545-b7e8-18c4de
 
 const PHONE = "+7 (949) 378-59-98";
 const PHONE_HREF = "tel:+79493785998";
-const WA_HREF = "https://wa.me/79493785998";
+const TG_HREF = "https://t.me/+79493785998";
 
 const navLinks = [
   { label: "О компании", href: "#about" },
@@ -353,9 +353,9 @@ export default function Index() {
                   </div>
                   <h3 className="font-display text-2xl font-bold text-white mb-2">Заявка отправлена!</h3>
                   <p className="text-[#A09080] mb-6">Мы позвоним вам в течение 15 минут. Спасибо!</p>
-                  <a href={WA_HREF} className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white font-semibold px-6 py-3 rounded-xl transition-colors">
-                    <Icon name="MessageCircle" size={18} />
-                    Написать в WhatsApp
+                  <a href={TG_HREF} className="inline-flex items-center gap-2 bg-[#2AABEE] hover:bg-[#1a9bd8] text-white font-semibold px-6 py-3 rounded-xl transition-colors">
+                    <Icon name="Send" size={18} />
+                    Написать в Telegram
                   </a>
                 </div>
               ) : (
@@ -426,11 +426,11 @@ export default function Index() {
                   </div>
 
                   <a
-                    href={WA_HREF}
-                    className="w-full bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/30 text-[#25D366] font-semibold text-sm py-3 rounded-xl transition-all flex items-center justify-center gap-2"
+                    href={TG_HREF}
+                    className="w-full bg-[#2AABEE]/15 hover:bg-[#2AABEE]/25 border border-[#2AABEE]/30 text-[#2AABEE] font-semibold text-sm py-3 rounded-xl transition-all flex items-center justify-center gap-2"
                   >
-                    <Icon name="MessageCircle" size={16} />
-                    Написать в WhatsApp
+                    <Icon name="Send" size={16} />
+                    Написать в Telegram
                   </a>
 
                   <p className="text-center text-xs text-[#4A3D2F]">
@@ -598,11 +598,11 @@ export default function Index() {
                 href: PHONE_HREF,
               },
               {
-                icon: "MessageCircle",
-                title: "WhatsApp / Telegram",
+                icon: "Send",
+                title: "Telegram",
                 value: PHONE,
                 sub: "Напишите в любое время",
-                href: WA_HREF,
+                href: TG_HREF,
               },
               {
                 icon: "Clock",
@@ -644,11 +644,11 @@ export default function Index() {
           Позвонить
         </a>
         <a
-          href={WA_HREF}
-          className="flex-1 bg-[#25D366]/15 border border-[#25D366]/30 text-[#25D366] font-semibold text-sm py-3 rounded-xl flex items-center justify-center gap-2"
+          href={TG_HREF}
+          className="flex-1 bg-[#2AABEE]/15 border border-[#2AABEE]/30 text-[#2AABEE] font-semibold text-sm py-3 rounded-xl flex items-center justify-center gap-2"
         >
-          <Icon name="MessageCircle" size={16} />
-          WhatsApp
+          <Icon name="Send" size={16} />
+          Telegram
         </a>
       </div>
 
