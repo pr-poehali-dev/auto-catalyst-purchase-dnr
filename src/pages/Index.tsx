@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const CATALYST_IMG = "https://cdn.poehali.dev/projects/b51c012f-6a7f-4545-b7e8-18c4de32a23c/files/34553c01-67ab-4683-af9a-c6ae88d2b02f.jpg";
+const CATALYST_IMG = "https://cdn.poehali.dev/projects/b51c012f-6a7f-4545-b7e8-18c4de32a23c/files/6dd7f5ff-b94f-4ff0-9afa-2903fa10029f.jpg";
 const HERO_BG = "https://cdn.poehali.dev/projects/b51c012f-6a7f-4545-b7e8-18c4de32a23c/files/506ffeb7-cc74-4448-9a73-a31aebe95b27.jpg";
 
 const navLinks = [
