@@ -446,16 +446,16 @@ export default function Index() {
               {
                 icon: "Phone",
                 title: "Телефон",
-                value: "+7 (800) 555-00-00",
+                value: "+7 (949) 378-59-98",
                 sub: "Бесплатно по России",
-                href: "tel:+78005550000",
+                href: "tel:+79493785998",
               },
               {
                 icon: "MessageCircle",
                 title: "WhatsApp / Telegram",
-                value: "+7 (999) 000-00-00",
+                value: "+7 (949) 378-59-98",
                 sub: "Напишите в любое время",
-                href: "#",
+                href: "https://wa.me/79493785998",
               },
               {
                 icon: "Clock",
