@@ -258,7 +258,11 @@ export default function Index() {
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-white">
               СКОЛЬКО СТОИТ <span className="gradient-text">ВАШ КАТАЛИЗАТОР</span>
             </h2>
-            <p className="text-[#A09080] mt-3">Точная цена — после анализа спектрометром. Цены ниже — ориентировочные.</p>
+            <p className="text-[#A09080] mt-3">Цены ориентировочные. Точная стоимость определяется после анализа XRF-спектрометром Vanta L.</p>
+            <div className="inline-flex items-center gap-2 bg-[#FF6B1A]/10 border border-[#FF6B1A]/25 rounded-full px-4 py-1.5 mt-3">
+              <Icon name="ScanLine" size={14} className="text-[#FF6B1A]" />
+              <span className="text-[#FF6B1A] text-xs font-medium">Анализ спектрометром — бесплатно, на месте</span>
+            </div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
