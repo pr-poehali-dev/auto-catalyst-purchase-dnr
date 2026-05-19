@@ -76,14 +76,27 @@ const prices = [
   { brand: "Дорогостоящие иномарки", price: "до 120 000 ₽", hot: true },
 ];
 
+const SEND_LEAD_URL = "https://functions.poehali.dev/cfefb67f-61b3-4a6b-b1fb-b4790d7c6166";
+
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", car: "", comment: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      await fetch(SEND_LEAD_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+    } finally {
+      setLoading(false);
+      setSubmitted(true);
+    }
   };
 
   return (
@@ -413,10 +426,11 @@ export default function Index() {
 
                   <button
                     type="submit"
-                    className="w-full bg-[#FF6B1A] hover:bg-[#FF8C42] text-[#0E0B08] font-bold text-base py-4 rounded-xl transition-all duration-200 neon-glow flex items-center justify-center gap-2"
+                    disabled={loading}
+                    className="w-full bg-[#FF6B1A] hover:bg-[#FF8C42] disabled:opacity-60 text-[#0E0B08] font-bold text-base py-4 rounded-xl transition-all duration-200 neon-glow flex items-center justify-center gap-2"
                   >
-                    <Icon name="Send" size={18} />
-                    Узнать цену бесплатно
+                    <Icon name={loading ? "Loader" : "Send"} size={18} className={loading ? "animate-spin" : ""} />
+                    {loading ? "Отправляем..." : "Узнать цену бесплатно"}
                   </button>
 
                   <div className="flex items-center gap-3">
