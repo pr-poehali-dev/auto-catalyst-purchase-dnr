@@ -157,7 +157,7 @@ export default function Index() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-[#FF6B1A]/15 border border-[#FF6B1A]/30 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
               <div className="w-2 h-2 rounded-full bg-[#FF6B1A]" />
-              <span className="text-[#FF6B1A] text-sm font-medium">Выезд по всей России</span>
+              <span className="text-[#FF6B1A] text-sm font-medium">Выезд по всему ДНР</span>
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-none mb-6 animate-fade-in">
