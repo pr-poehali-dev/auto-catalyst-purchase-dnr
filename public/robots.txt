@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://kataskupka.ru/sitemap.xml
+Sitemap: https://donetsk-katalizatory-dnr.ru/sitemap.xml
