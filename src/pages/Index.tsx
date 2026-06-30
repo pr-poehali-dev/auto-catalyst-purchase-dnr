@@ -96,6 +96,11 @@ export default function Index() {
     } finally {
       setLoading(false);
       setSubmitted(true);
+       
+      if (typeof window !== 'undefined' && (window as unknown as Record<string, unknown>).ym) {
+         
+        (window as unknown as { ym: (...args: unknown[]) => void }).ym(110280486, 'reachGoal', 'form_submit');
+      }
     }
   };
 
