@@ -8,6 +8,12 @@ const PHONE = "+7 (949) 378-59-98";
 const PHONE_HREF = "tel:+79493785998";
 const TG_HREF = "https://t.me/+79493785998";
 
+const trackCall = () => {
+  if (typeof window !== 'undefined' && (window as unknown as Record<string, unknown>).ym) {
+    (window as unknown as { ym: (...args: unknown[]) => void }).ym(110280486, 'reachGoal', 'phone_click');
+  }
+};
+
 const navLinks = [
   { label: "О компании", href: "#about" },
   { label: "Как продать", href: "#how" },
@@ -138,7 +144,7 @@ export default function Index() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href={PHONE_HREF} className="text-white font-bold text-sm hover:text-[#FF6B1A] transition-colors">
+            <a href={PHONE_HREF} onClick={trackCall} className="text-white font-bold text-sm hover:text-[#FF6B1A] transition-colors">
               {PHONE}
             </a>
             <a
@@ -169,7 +175,7 @@ export default function Index() {
                 {l.label}
               </a>
             ))}
-            <a href={PHONE_HREF} className="text-white font-bold text-lg text-center py-2">
+            <a href={PHONE_HREF} onClick={trackCall} className="text-white font-bold text-lg text-center py-2">
               {PHONE}
             </a>
             <a
@@ -228,6 +234,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={PHONE_HREF}
+                onClick={trackCall}
                 className="inline-flex items-center justify-center gap-2 bg-[#FF6B1A] hover:bg-[#FF8C42] text-[#0E0B08] font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200 neon-glow"
               >
                 <Icon name="Phone" size={20} />
@@ -306,6 +313,7 @@ export default function Index() {
           <div className="text-center">
             <a
               href={PHONE_HREF}
+              onClick={trackCall}
               className="inline-flex items-center gap-2 bg-[#FF6B1A] hover:bg-[#FF8C42] text-[#0E0B08] font-bold text-base px-10 py-4 rounded-xl transition-all duration-200 neon-glow"
             >
               <Icon name="Phone" size={18} />
@@ -553,6 +561,7 @@ export default function Index() {
           <div className="mt-12 text-center">
             <a
               href={PHONE_HREF}
+              onClick={trackCall}
               className="inline-flex items-center gap-2 bg-[#FF6B1A] hover:bg-[#FF8C42] text-[#0E0B08] font-bold text-base px-10 py-4 rounded-xl transition-all duration-200 neon-glow"
             >
               <Icon name="Phone" size={18} />
@@ -640,7 +649,7 @@ export default function Index() {
                 </div>
                 <div className="text-[#A09080] text-sm mb-1">{c.title}</div>
                 {c.href ? (
-                  <a href={c.href} className="font-display text-xl font-bold text-white hover:text-[#FF6B1A] transition-colors block mb-1">
+                  <a href={c.href} onClick={c.href === PHONE_HREF ? trackCall : undefined} className="font-display text-xl font-bold text-white hover:text-[#FF6B1A] transition-colors block mb-1">
                     {c.value}
                   </a>
                 ) : (
@@ -657,6 +666,7 @@ export default function Index() {
       <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-[#0E0B08]/95 backdrop-blur-sm border-t border-[#2A2218] p-3 flex gap-3">
         <a
           href={PHONE_HREF}
+          onClick={trackCall}
           className="flex-1 bg-[#FF6B1A] hover:bg-[#FF8C42] text-[#0E0B08] font-bold text-sm py-3 rounded-xl flex items-center justify-center gap-2"
         >
           <Icon name="Phone" size={16} />
